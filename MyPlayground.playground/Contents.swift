@@ -19,13 +19,25 @@ struct Images {
     let thumb : NSURL?
 }
 
+//enum para estados
+
 struct Show {
     
     let title : String
     let year : Int
     let overview : String
-    let ids : Ids?
-    let images : Images?
+    let ids : Ids
+    let fanart: Images?
+    let poster: Images?
+    let logo: Images?
+    let clearart: Images?
+    let banner: Images?
+    let thumb: Images?
+
+
+
+
+
     
     
     /* uma possivel funcao
@@ -44,9 +56,10 @@ struct Show {
     }
 
 */
-    
-    
 }
+let id = Ids(trackt: 123, slug: nil, tvdb: nil, imdb: nil, tmdb: nil, tvrage: nil)
+//let image = Images(full: nil, medium: nil, thumb: nil)
+let show = Show(title: "something", year: 1991, overview: "Something else", ids: id,fanart: nil, poster: nil, logo: nil, clearart: nil, banner: nil, thumb: nil)
 
 
 
